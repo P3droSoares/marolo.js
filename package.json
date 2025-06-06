@@ -1,0 +1,26 @@
+{
+  "name": "marolo.js",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/P3droSoares/marolo.js#readme",
+  "bugs": {
+    "url": "https://github.com/P3droSoares/marolo.js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P3droSoares/marolo.js.git"
+  },
+  "license": "MIT",
+  "author": "Pedro Soares",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
