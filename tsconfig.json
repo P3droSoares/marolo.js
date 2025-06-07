@@ -1,33 +1,29 @@
 {
   "compilerOptions": {
-    /* Base Options: */
+    "lib": [
+      "es6"
+    ],
+    "module": "commonjs",
+    "target": "es2017",
+    "sourceMap": true,
+    "allowJs": true,
+    "removeComments": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "es2022",
-    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
     "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
-    "verbatimModuleSyntax": true,
-
-    /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-
-    /* If transpiling with TypeScript: */
-    "module": "NodeNext",
-    "outDir": "dist",
-    "rootDir": "src",
-    "sourceMap": true,
-
-    /* AND if you're building for a library: */
-    "declaration": true,
-
-    /* AND if you're building for a library in a monorepo: */
-    "declarationMap": true,
-
-    // ...other options
-    "lib": ["es2022"]
+    "types": [
+      "node",
+      "jest"
+    ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
   }
 }
