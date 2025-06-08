@@ -1,6 +1,6 @@
-import { TemplateNode } from "@/models/scaffold";
+import { BasicTemplate } from "@/types/templates/BasicTemplate";
 
-export const basicTemplate: TemplateNode = {
+export const basicTemplate: BasicTemplate = {
   name: "MyComponent",
   type: "folder",
   children: [

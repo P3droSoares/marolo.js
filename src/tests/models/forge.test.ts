@@ -1,5 +1,6 @@
 import { MaroloJs } from "@/index";
+import { basicTemplate } from "@/templates/basic";
 
 test("Gerar esquema de arquivos e pasta com Forge", () => {
-  MaroloJs;
+  MaroloJs.scaffold(basicTemplate, "./gasola-app");
 });
