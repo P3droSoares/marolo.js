@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "dist", // Tudo vai pra pasta dist
+    "rootDir": "src", // Origem do código TypeScript
     "lib": [
       "es6"
     ],
-    "module": "commonjs",
-    "target": "es2017",
-    "sourceMap": true,
+    "sourceMap": true, // Gera arquivos .map (se quiser remover, deixe como false)
     "allowJs": true,
     "removeComments": true,
     "esModuleInterop": true,
@@ -21,10 +22,14 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "baseUrl": "./src",
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
+    "declaration": true,
+    "declarationDir": "dist" // Arquivos .d.ts também vão pra dist
   },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

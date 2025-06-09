@@ -1,5 +1,5 @@
-import { IBasicTemplate } from "@/interfaces/IBasicTemplate";
-import { TemplatePlugin } from "@/plugins/templatePlugin";
+import { IBasicTemplate } from "../interfaces/IBasicTemplate";
+import { TemplatePlugin } from "../plugins/templatePlugin";
 
 export class BasicTemplate extends TemplatePlugin {
   private template: IBasicTemplate;

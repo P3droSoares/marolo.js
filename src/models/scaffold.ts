@@ -1,6 +1,6 @@
-import { TemplatePlugin } from "@/plugins/templatePlugin";
-import { TemplateValidationError } from "@/exceptions/TemplateValidationError";
-import { IBasicTemplate } from "@/interfaces/IBasicTemplate";
+import { TemplatePlugin } from "../plugins/templatePlugin";
+import { TemplateValidationError } from "../exceptions/TemplateValidationError";
+import { IBasicTemplate } from "../interfaces/IBasicTemplate";
 import fs from "fs";
 import path from "path";
 

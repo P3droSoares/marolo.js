@@ -1,5 +1,5 @@
-import { IBasicTemplate } from "@/interfaces/IBasicTemplate";
-import { BasicTemplate } from "@/models/basicTemplate";
+import { IBasicTemplate } from "../interfaces/IBasicTemplate";
+import { BasicTemplate } from "../models/basicTemplate";
 
 const demo: IBasicTemplate = {
   name: "MyComponent",

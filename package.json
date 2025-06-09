@@ -1,7 +1,18 @@
 {
   "name": "marolo.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "homepage": "https://github.com/P3droSoares/marolo.js#readme",
   "bugs": {
     "url": "https://github.com/P3droSoares/marolo.js/issues"
@@ -12,7 +23,6 @@
   },
   "license": "MIT",
   "author": "Pedro Soares",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only ./src/index.ts",

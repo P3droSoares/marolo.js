@@ -1,4 +1,4 @@
-import { IBasicTemplate } from "@/interfaces/IBasicTemplate";
+import { IBasicTemplate } from "../interfaces/IBasicTemplate";
 
 export abstract class TemplatePlugin {
   public baseDir: string;
