@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "lib": [
       "es6"
     ],
@@ -25,5 +26,5 @@
         "./*"
       ]
     },
-  }
+  },
 }
