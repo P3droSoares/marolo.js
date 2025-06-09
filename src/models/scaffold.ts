@@ -1,14 +1,22 @@
+import { TemplatePlugin } from "@/plugins/templatePlugin";
 import { TemplateValidationError } from "@/exceptions/TemplateValidationError";
-import { BasicTemplate } from "@/types/templates/BasicTemplate";
+import { IBasicTemplate } from "@/interfaces/IBasicTemplate";
 import fs from "fs";
 import path from "path";
 
-export function scaffold(template: BasicTemplate, basePath = ".") {
+export function scaffold(plugin: TemplatePlugin) {
+  const template = plugin.resolve();
+  createFromTemplate(template, plugin.baseDir);
+}
+
+function createFromTemplate(template: IBasicTemplate, basePath: string) {
   const currentPath = path.join(basePath, template.name);
 
   if (template.type === "folder") {
     fs.mkdirSync(currentPath, { recursive: true });
-    template.children?.forEach((child) => scaffold(child, currentPath));
+    template.children?.forEach((child) =>
+      createFromTemplate(child, currentPath),
+    );
   } else if (template.type === "file") {
     if (template.children) {
       throw new TemplateValidationError(
@@ -16,8 +24,7 @@ export function scaffold(template: BasicTemplate, basePath = ".") {
       );
     }
 
-    let content = "";
-
+    let content = template.content ?? "";
     fs.writeFileSync(currentPath, content);
   }
 }

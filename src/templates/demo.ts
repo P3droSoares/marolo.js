@@ -1,6 +1,7 @@
-import { BasicTemplate } from "@/types/templates/BasicTemplate";
+import { IBasicTemplate } from "@/interfaces/IBasicTemplate";
+import { BasicTemplate } from "@/models/basicTemplate";
 
-export const basicTemplate: BasicTemplate = {
+const demo: IBasicTemplate = {
   name: "MyComponent",
   type: "folder",
   children: [
@@ -19,3 +20,5 @@ export const basicTemplate: BasicTemplate = {
     },
   ],
 };
+
+export const demoTemplate = new BasicTemplate(demo, ".");
