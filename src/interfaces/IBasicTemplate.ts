@@ -1,6 +1,8 @@
 export interface IBasicTemplate {
   name: string;
-  type: "file" | "folder";
+  type: ChildrenType;
   children?: IBasicTemplate[];
   content?: string;
 }
+
+export type ChildrenType = "file" | "folder";

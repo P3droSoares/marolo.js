@@ -1,6 +1,6 @@
 {
   "name": "marolo.js",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "",
   "files": [
     "dist"
@@ -25,7 +25,7 @@
   "author": "Pedro Soares",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only ./src/index.ts",
+    "examples": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only ./examples/index.ts",
     "test": "jest --runInBand",
     "test:watch": "jest --watchAll --runInBand"
   },
