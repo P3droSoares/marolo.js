@@ -1,29 +1,89 @@
-# Marolo.js
+# 📦 Marolo.js - Usage Tutorial
 
-Gere estruturas de pastas e arquivos com templates e suporte a plugins customizados.
+This is a basic guide to help you get started with **Marolo.js**, an extensible library for generating folder and file structures using declarative templates with support for custom plugins.
 
-## Sobre
+---
 
-O **Marolo.js** é uma biblioteca leve e extensível que permite a criação de estruturas de arquivos e pastas com base em templates declarativos. Com suporte a plugins personalizados, você pode adaptar a geração de arquivos para qualquer stack ou convenção do seu projeto — como React, Node, ou qualquer outro.
+## ✅ Requirements
 
-## Instalação
+* Node.js installed
+* TypeScript (optional but recommended)
+* A project with a basic folder structure
+
+---
+
+## 🚀 Installation
+
+Install the package via NPM:
 
 ```bash
 npm install marolo.js
 ```
 
-## Uso
+---
 
-Em breve a documentação completa de como usar o Marolo.js estará disponível aqui. 🚧
+## 🧐 Concept
 
-## Contribuindo
-
-Contribuições são muito bem-vindas! Se você tem ideias para novos recursos ou plugins, sinta-se à vontade para abrir uma issue ou pull request.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT.
+Marolo.js works with **declarative templates** and allows you to create **custom plugins** to generate specific structures like React components, Node.js structures, and much more.
 
 ---
 
-[Repositório no GitHub](https://github.com/P3droSoares/marolo.js)
+## 🔧 Basic Usage Example
+
+```ts
+import { MaroloJs } from "marolo.js";
+import { exampleTemplate } from "./template.example";
+
+MaroloJs.scaffold(exampleTemplate);
+```
+
+---
+
+## 🏗️ Template Construction Example
+
+```ts
+import { IBasicTemplate, BasicTemplate } from "marolo.js";
+
+const baseDir = ".";
+
+const exampleTemplate: IBasicTemplate = {
+  name: "MyApp",
+  type: "folder",
+  children: [
+    {
+      name: "index.ts",
+      type: "file",
+      content: `console.log('Hello from Marolo.js');`,
+    },
+    {
+      name: "utils",
+      type: "folder",
+      children: [
+        {
+          name: "math.ts",
+          type: "file",
+          content: `export const sum = (a: number, b: number) => a + b;`,
+        },
+      ],
+    },
+  ],
+};
+
+export const basicExampleTemplate = new BasicTemplate(exampleTemplate, baseDir);
+```
+
+---
+
+## 🤝 Contributions
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+---
+
+## 📝 License
+
+MIT
+
+---
+
+GitHub: [https://github.com/P3droSoares/marolo.js](https://github.com/P3droSoares/marolo.js)
