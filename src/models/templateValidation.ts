@@ -1,5 +1,5 @@
-import { TemplateValidationError } from "exceptions/TemplateValidationError";
-import { IBasicTemplate } from "interfaces/IBasicTemplate";
+import { TemplateValidationError } from "../exceptions/TemplateValidationError";
+import { IBasicTemplate } from "../interfaces/IBasicTemplate";
 
 const INVALID_CHARS_REGEX = /[<>:"/\\|?*\x00-\x1F]/;
 
