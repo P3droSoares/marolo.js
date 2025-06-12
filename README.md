@@ -1,29 +1,29 @@
 # Marolo.js
 
-Gere estruturas de pastas e arquivos com templates e suporte a plugins customizados.
+Generate folder and file structures using templates with support for custom plugins.
 
-## Sobre
+## About
 
-O **Marolo.js** é uma biblioteca leve e extensível que permite a criação de estruturas de arquivos e pastas com base em templates declarativos. Com suporte a plugins personalizados, você pode adaptar a geração de arquivos para qualquer stack ou convenção do seu projeto — como React, Node, ou qualquer outro.
+**Marolo.js** is a lightweight and extensible library that allows you to create file and folder structures based on declarative templates. With support for custom plugins, you can adapt file generation to any stack or project convention — such as React, Node, or any other.
 
-## Instalação
+## Installation
 
 ```bash
 npm install marolo.js
 ```
 
-## Uso
+## Usage
 
-Em breve a documentação completa de como usar o Marolo.js estará disponível aqui. 🚧
+Full documentation on how to use Marolo.js will be available here soon. 🚧
 
-## Contribuindo
+## Contributing
 
-Contribuições são muito bem-vindas! Se você tem ideias para novos recursos ou plugins, sinta-se à vontade para abrir uma issue ou pull request.
+Contributions are very welcome! If you have ideas for new features or plugins, feel free to open an issue or pull request.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a licença MIT.
+This project is licensed under the MIT License.
 
 ---
 
-[Repositório no GitHub](https://github.com/P3droSoares/marolo.js)
+[GitHub Repository](https://github.com/P3droSoares/marolo.js)
